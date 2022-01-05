@@ -70,7 +70,7 @@ module.exports = function (task) {
 
     const filePath = path.join(file.dir, file.base);
     const fullFilePath = path.join(__dirname, filePath);
-    const distFilePath = path.dirname(path.join(__dirname, isClient ? 'build' : 'dist', filePath));
+    const distFilePath = path.dirname(path.join(__dirname, 'build', filePath));
 
     const options = {
       filename: path.join(file.dir, file.base),
